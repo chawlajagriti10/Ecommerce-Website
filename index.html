@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | E-Commerce Website</title>
+ 
+    <link rel="stylesheet" href="style.css">
+ 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+ 
+<body>
+ 
+    <!-- Navbar -->
+ 
+    <header>
+ 
+        <div class="logo">
+            ShopEase
+        </div>
+ 
+        <div class="search-box">
+ 
+            <input
+                type="text"
+                id="search"
+                placeholder="Search products...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+ 
+        </div>
+ 
+        <nav>
+ 
+            <button class="filter-btn active" data-category="All">
+                All
+            </button>
+ 
+            <button class="filter-btn" data-category="Electronics">
+                Electronics
+            </button>
+ 
+            <button class="filter-btn" data-category="Clothing">
+                Clothing
+            </button>
+ 
+            <button class="filter-btn" data-category="Shoes">
+                Shoes
+            </button>
+ 
+            <button class="filter-btn" data-category="Watches">
+                Watches
+            </button>
+ 
+        </nav>
+ 
+        <div class="cart">
+ 
+            <i class="fa-solid fa-cart-shopping"></i>
+ 
+            <span id="cart-count">0</span>
+ 
+        </div>
+ 
+    </header>
+ 
+ 
+ 
+    <!-- Hero Section -->
+ 
+    <section class="hero">
+ 
+        <div class="hero-content">
+ 
+            <h1>
+                Discover Amazing Deals
+            </h1>
+ 
+            <p>
+                Shop the latest fashion, electronics and accessories at the best prices.
+            </p>
+ 
+            <button id="shop-btn">
+                Shop Now
+            </button>
+ 
+        </div>
+ 
+    </section>
+ 
+ 
+ 
+    <!-- Products -->
+ 
+    <section class="products-section">
+ 
+        <h2>
+            Featured Products
+        </h2>
+ 
+        <div id="products" class="products">
+ 
+        </div>
+ 
+    </section>
+ 
+ 
+ 
+    <!-- Shopping Cart -->
+ 
+    <aside id="cart-sidebar" class="cart-sidebar">
+ 
+        <div class="cart-header">
+ 
+            <h2>Shopping Cart</h2>
+ 
+            <button id="close-cart">
+                ✖
+            </button>
+ 
+        </div>
+ 
+        <div id="cart-items">
+ 
+        </div>
+ 
+        <div class="cart-footer">
+ 
+            <h3>
+                Total :
+                ₹<span id="total-price">0</span>
+            </h3>
+ 
+            <button id="checkout-btn">
+                Checkout
+            </button>
+ 
+        </div>
+ 
+    </aside>
+ 
+ 
+ 
+    <!-- Footer -->
+ 
+    <footer>
+ 
+        <p>
+            © 2026 ShopEase | Designed by Jagriti Chawla
+        </p>
+ 
+    </footer>
+ 
+ 
+ 
+    <script src="products.js"></script>
+ 
+    <script src="script.js"></script>
+ 
+</body>
+ 
+</html>
