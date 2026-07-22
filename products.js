@@ -5,7 +5,7 @@ const products = [
     category:"Electronics",
     price:54999,
     rating:"⭐⭐⭐⭐⭐",
-    image:"images/laptop.png"
+    image:"/laptop.png"
 },
  
 {
@@ -14,7 +14,7 @@ const products = [
     category:"Electronics",
     price:2999,
     rating:"⭐⭐⭐⭐",
-    image:"images/headphone.png"
+    image:"/headphone.png"
 },
  
 {
@@ -23,7 +23,7 @@ const products = [
     category:"Electronics",
     price:24999,
     rating:"⭐⭐⭐⭐⭐",
-    image:"images/mobile.png"
+    image:"/mobile.png"
 },
  
 {
@@ -32,7 +32,7 @@ const products = [
     category:"Clothing",
     price:899,
     rating:"⭐⭐⭐⭐",
-    image:"images/tshirt.png"
+    image:"/tshirt.png"
 },
  
 {
@@ -41,7 +41,7 @@ const products = [
     category:"Clothing",
     price:1499,
     rating:"⭐⭐⭐⭐⭐",
-    image:"images/hoodie.png"
+    image:"/hoodie.png"
 },
  
 {
@@ -50,7 +50,7 @@ const products = [
     category:"Clothing",
     price:1999,
     rating:"⭐⭐⭐⭐",
-    image:"images/jacket.png"
+    image:"/jacket.png"
 },
  
 {
@@ -59,7 +59,7 @@ const products = [
     category:"Shoes",
     price:3499,
     rating:"⭐⭐⭐⭐⭐",
-    image:"images/shoes.png"
+    image:"/shoes.png"
 },
  
 {
@@ -68,7 +68,7 @@ const products = [
     category:"Shoes",
     price:2799,
     rating:"⭐⭐⭐⭐",
-    image:"images/sneakers.png"
+    image:"/sneakers.png"
 },
  
 {
@@ -77,7 +77,7 @@ const products = [
     category:"Shoes",
     price:3999,
     rating:"⭐⭐⭐⭐⭐",
-    image:"images/formal-shoes.png"
+    image:"/formal-shoes.png"
 },
  
 {
@@ -86,7 +86,7 @@ const products = [
     category:"Watches",
     price:4999,
     rating:"⭐⭐⭐⭐⭐",
-    image:"images/smartwatch.png"
+    image:"/smartwatch.png"
 },
  
 {
@@ -95,7 +95,7 @@ const products = [
     category:"Watches",
     price:2999,
     rating:"⭐⭐⭐⭐",
-    image:"images/watch.png"
+    image:"/watch.png"
 },
  
 {
@@ -104,7 +104,7 @@ const products = [
     category:"Watches",
     price:7999,
     rating:"⭐⭐⭐⭐⭐",
-    image:"images/luxury-watch.png"
+    image:"/luxury-watch.png"
 }
  
 ];
