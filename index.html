@@ -2,19 +2,29 @@
 <html lang="en">
  
 <head>
+ 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+ 
     <title>ShopEase | E-Commerce Website</title>
  
-    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="style.css">
  
-    <link rel="stylesheet"
+    <link
+        rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+ 
 </head>
  
 <body>
  
-    <!-- Navbar -->
+ 
+    <!-- ================= NAVBAR ================= -->
  
     <header>
  
@@ -22,45 +32,61 @@
             ShopEase
         </div>
  
+ 
         <div class="search-box">
  
             <input
                 type="text"
                 id="search"
                 placeholder="Search products...">
+ 
             <i class="fa-solid fa-magnifying-glass"></i>
  
         </div>
  
+ 
         <nav>
  
-            <button class="filter-btn active" data-category="All">
+            <button
+                class="filter-btn active"
+                data-category="All">
                 All
             </button>
  
-            <button class="filter-btn" data-category="Electronics">
+            <button
+                class="filter-btn"
+                data-category="Electronics">
                 Electronics
             </button>
  
-            <button class="filter-btn" data-category="Clothing">
+            <button
+                class="filter-btn"
+                data-category="Clothing">
                 Clothing
             </button>
  
-            <button class="filter-btn" data-category="Shoes">
+            <button
+                class="filter-btn"
+                data-category="Shoes">
                 Shoes
             </button>
  
-            <button class="filter-btn" data-category="Watches">
+            <button
+                class="filter-btn"
+                data-category="Watches">
                 Watches
             </button>
  
         </nav>
  
+ 
         <div class="cart">
  
             <i class="fa-solid fa-cart-shopping"></i>
  
-            <span id="cart-count">0</span>
+            <span id="cart-count">
+                0
+            </span>
  
         </div>
  
@@ -68,7 +94,7 @@
  
  
  
-    <!-- Hero Section -->
+    <!-- ================= HERO ================= -->
  
     <section class="hero">
  
@@ -79,7 +105,8 @@
             </h1>
  
             <p>
-                Shop the latest fashion, electronics and accessories at the best prices.
+                Shop the latest fashion, electronics
+                and accessories at the best prices.
             </p>
  
             <button id="shop-btn">
@@ -92,7 +119,7 @@
  
  
  
-    <!-- Products -->
+    <!-- ================= PRODUCTS ================= -->
  
     <section class="products-section">
  
@@ -100,21 +127,26 @@
             Featured Products
         </h2>
  
-        <div id="products" class="products">
- 
+        <div
+            id="products"
+            class="products">
         </div>
  
     </section>
  
  
  
-    <!-- Shopping Cart -->
+    <!-- ================= SHOPPING CART ================= -->
  
-    <aside id="cart-sidebar" class="cart-sidebar">
+    <aside
+        id="cart-sidebar"
+        class="cart-sidebar">
  
         <div class="cart-header">
  
-            <h2>Shopping Cart</h2>
+            <h2>
+                Shopping Cart
+            </h2>
  
             <button id="close-cart">
                 ✖
@@ -122,16 +154,29 @@
  
         </div>
  
+ 
         <div id="cart-items">
  
         </div>
  
+ 
         <div class="cart-footer">
  
+            <p>
+                Subtotal:
+                ₹<span id="subtotal-price">0</span>
+            </p>
+ 
+            <p>
+                Delivery:
+                <span id="delivery-price">₹0</span>
+            </p>
+ 
             <h3>
-                Total :
+                Total:
                 ₹<span id="total-price">0</span>
             </h3>
+ 
  
             <button id="checkout-btn">
                 Checkout
@@ -143,21 +188,182 @@
  
  
  
-    <!-- Footer -->
+    <!-- ================= CHECKOUT MODAL ================= -->
+ 
+    <div
+        id="checkout-modal"
+        class="modal">
+ 
+        <div class="modal-box">
+ 
+            <button
+                id="close-checkout"
+                class="modal-close">
+                ✖
+            </button>
+ 
+ 
+            <h2>
+                Checkout
+            </h2>
+ 
+ 
+            <input
+                type="text"
+                id="customer-name"
+                placeholder="Full Name">
+ 
+ 
+            <input
+                type="tel"
+                id="customer-phone"
+                placeholder="Phone Number"
+                maxlength="10">
+ 
+ 
+            <textarea
+                id="customer-address"
+                placeholder="Delivery Address" 
+                rows="3"></textarea>
+ 
+ 
+            <div id="payment-method">
+ 
+               <label>Payment Method</label>
+               <div class="cod-option">
+
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                            <strong>Cash on Delivery</strong>
+                            <small>Pay when Your order arrives</small>
+                     </div>
+                    </div>
+            <p class="checkout-total">
+                Total:
+                ₹<strong id="checkout-total">
+                    0
+                </strong>
+ 
+            </p>
+ 
+ 
+            <button id="continue-checkout">
+                Continue
+            </button>
+ 
+        </div>
+ 
+    </div>
+ 
+ 
+ 
+    <!-- ================= CONFIRM ORDER MODAL ================= -->
+ 
+    <div
+        id="confirm-modal"
+        class="modal">
+ 
+        <div class="modal-box confirm-box">
+ 
+            <h2>
+                Place Your Order?
+            </h2>
+ 
+ 
+            <p>
+                Do you want to place this order?
+            </p>
+ 
+ 
+            <h3>
+ 
+                Total:
+                ₹<span id="confirm-total">
+                    0
+                </span>
+ 
+            </h3>
+ 
+ 
+            <div class="confirm-buttons">
+ 
+                <button id="cancel-order">
+                    Cancel
+                </button>
+ 
+                <button id="confirm-order">
+                    Place Order
+                </button>
+ 
+            </div>
+ 
+        </div>
+ 
+    </div>
+ 
+ 
+ 
+    <!-- ================= SUCCESS MODAL ================= -->
+ 
+    <div
+        id="success-modal"
+        class="modal">
+ 
+        <div class="modal-box success-box">
+ 
+            <div class="success-icon">
+                ✓
+            </div>
+ 
+ 
+            <h2>
+                Order Successfully Placed!
+            </h2>
+ 
+ 
+            <p>
+                Thank you for shopping with ShopEase.
+            </p>
+ 
+ 
+            <p>
+ 
+                Your Order ID:
+ 
+                <strong id="order-id">
+                </strong>
+ 
+            </p>
+ 
+ 
+            <button id="continue-shopping">
+                Continue Shopping
+            </button>
+ 
+        </div>
+ 
+    </div>
+ 
+ 
+ 
+    <!-- ================= FOOTER ================= -->
  
     <footer>
  
         <p>
-            © 2026 ShopEase | Designed by Jagriti Chawla
+            © 2026 ShopEase |
+            Designed by Jagriti Chawla
         </p>
  
     </footer>
  
  
  
+    <!-- ================= JAVASCRIPT ================= -->
+ 
     <script src="products.js"></script>
  
     <script src="script.js"></script>
+ 
  
 </body>
  
